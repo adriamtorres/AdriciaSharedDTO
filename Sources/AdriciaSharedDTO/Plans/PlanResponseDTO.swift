@@ -16,7 +16,7 @@ public struct PlanResponseDTO: Codable {
     public init(id: UUID, event: String, eventDate: String, eventTime: String) {
         self.id = id
         self.event = event
-        self.eventDate = event
-        self.eventTime = event
+        self.eventDate = eventDate
+        self.eventTime = eventTime
     }
 }
