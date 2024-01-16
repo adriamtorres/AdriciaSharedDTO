@@ -15,6 +15,8 @@ public struct TripRequestDTO: Codable {
     public let returnDate: String
     public let returnTime: String
     public let isFlying: Bool
+    public let isTrishTraveling: Bool
+    public let isAdriTraveling: Bool
 
     public init(
         destination: String,
@@ -22,7 +24,9 @@ public struct TripRequestDTO: Codable {
         departureTime: String,
         returnDate: String,
         returnTime: String,
-        isFlying: Bool
+        isFlying: Bool,
+        isTrishTraveling: Bool,
+        isAdriTraveling: Bool
     ) {
         self.destination = destination
         self.departureDate = departureDate
@@ -30,5 +34,7 @@ public struct TripRequestDTO: Codable {
         self.returnDate = returnDate
         self.returnTime = returnTime
         self.isFlying = isFlying
+        self.isTrishTraveling = isTrishTraveling
+        self.isAdriTraveling = isAdriTraveling
     }
 }
