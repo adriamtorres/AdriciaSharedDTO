@@ -13,8 +13,8 @@ public struct PlanResponseDTO: Codable {
     public let event: String
     public let eventDate: String
     public let eventTime: String
-    public let address: String
-    public let image: String
+    public let address: String?
+    public let image: String?
     public let isTBD: Bool
     
     public init(
