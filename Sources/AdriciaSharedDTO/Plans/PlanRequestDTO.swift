@@ -12,23 +12,23 @@ public struct PlanRequestDTO: Codable {
     public let event: String
     public let eventDate: String
     public let eventTime: String
-    public let eventAddress: String?
-    public let eventImage: String?
-    public let isEventTBD: Bool
+    public let address: String
+    public let image: String
+    public let isTBD: Bool
     
     public init(
         event: String,
         eventDate: String,
         eventTime: String,
-        eventAddress: String,
-        eventImage: String,
-        isEventTBD: Bool
+        address: String,
+        image: String,
+        isTBD: Bool
     ) {
         self.event = event
         self.eventDate = eventDate
         self.eventTime = eventTime
-        self.eventAddress = eventAddress
-        self.eventImage = eventImage
-        self.isEventTBD = isEventTBD
+        self.address = address
+        self.image = image
+        self.isTBD = isTBD
     }
 }
