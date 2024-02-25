@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+public struct BookRequestDTO: Codable {
+    
+    public let title: String
+
+    public init(title: String) {
+        self.title = title
+    }
+}
